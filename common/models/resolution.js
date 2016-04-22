@@ -1,7 +1,6 @@
 module.exports = function(Resolution) {
     Resolution.status == function(cb) {
-        var response;
-        response = 'dummy function to be removed';
+        var response = 'dummy function to be removed';
         cb(null, response);
     };
     Resolution.remoteMethod(
