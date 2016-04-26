@@ -39,5 +39,9 @@
   "Resolute": {
     "dataSource": "mongoDs",
     "public": true
+  },
+  "review": {
+    "dataSource": "mongoDs",
+    "public": true
   }
 }
