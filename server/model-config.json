@@ -40,7 +40,7 @@
     "dataSource": "mongoDs",
     "public": true
   },
-  "review": {
+  "Review": {
     "dataSource": "mongoDs",
     "public": true
   }
