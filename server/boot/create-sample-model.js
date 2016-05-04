@@ -36,17 +36,20 @@ module.exports = function(app) {
         {
             title: 'Write a novel', 
             description: 'Sign up to nanowrimo and aim to complete 50,000 words', 
-            created: Date.now() - (DAY_IN_MILLISECONDS * 2)
+            created: Date.now() - (DAY_IN_MILLISECONDS * 2),
+            resolutId: resolutes[2].id
         },
         {
             title: 'Lose weight', 
             description: 'Follow the paleo diet daily', 
-            created: Date.now() - (DAY_IN_MILLISECONDS * 2)
+            created: Date.now() - (DAY_IN_MILLISECONDS * 2),
+            resolutId: resolutes[1].id
         },
         {
             title: 'Run a marathon', 
             description: 'To run the London marathin I need to train for 3 month beforehand', 
-            created: Date.now() - (DAY_IN_MILLISECONDS * 2)
+            created: Date.now() - (DAY_IN_MILLISECONDS * 2),
+            resolutId: resolutes[0].id
         },
       ], cb);
     });
@@ -61,29 +64,29 @@ module.exports = function(app) {
         {
           date: Date.now() - (DAY_IN_MILLISECONDS * 4),
           rating: 5,
-          comments: 'Awesome - keep up the good work Foo!',
-          publisherId: resolutes[0].id,
+          comments: 'Awesome - keep up the good work Jane! - Foo',
+          reviewerId: resolutes[0].id,
           resolutionId: resolutions[0].id,
         },
         {
           date: Date.now() - (DAY_IN_MILLISECONDS * 3),
           rating: 5,
-          comments: 'John - you have inspired me!',
-          publisherId: resolutes[1].id,
+          comments: 'Jane - you have inspired me! - John',
+          reviewerId: resolutes[1].id,
           resolutionId: resolutions[0].id,
         },
         {
           date: Date.now() - (DAY_IN_MILLISECONDS * 2),
           rating: 4,
-          comments: 'Go John!',
-          publisherId: resolutes[1].id,
+          comments: 'Go John! - Foo',
+          reviewerId: resolutes[0].id,
           resolutionId: resolutions[1].id,
         },
         {
           date: Date.now() - (DAY_IN_MILLISECONDS),
           rating: 4,
-          comments: 'Rather you than me Jane. I could never run 26 miles.',
-          publisherId: resolutes[2].id,
+          comments: 'Rather you than me foo. I could never run 26 miles - Jane.',
+          reviewerId: resolutes[2].id,
           resolutionId: resolutions[2].id,
         }
       ], cb);

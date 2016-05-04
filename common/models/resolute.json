@@ -7,7 +7,18 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "Review",
+      "foreignKey": "reviewerId"
+    },
+    "resolutions": {
+      "type": "hasMany",
+      "model": "Resolution",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

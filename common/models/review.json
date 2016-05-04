@@ -19,7 +19,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "resolution": {
+      "type": "belongsTo",
+      "model": "Resolution",
+      "foreignKey": ""
+    },
+    "reviewer": {
+      "type": "belongsTo",
+      "model": "Resolute",
+      "foreignKey": "reviewerId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
